@@ -1,1 +1,4 @@
 .github/**
+analysis_raw_data/chicago.csv
+analysis_raw_data/new_york_city.csv
+analysis_raw_data/washington.csv
