@@ -233,10 +233,12 @@ def show_raw_data(df):
 
 def main():
     """Main function that calls all subfunctions after another"""
+    # while loop to ask as long for filter input as there are no matching answers
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
 
+        # calling one function after another
         time_stats(df)
         input("Press Enter to continue...")
         station_stats(df)
