@@ -11,9 +11,10 @@ Analysis of bikesharing data for three U.S. cities in the year of 2017.
 
 ### Files used
 bikeshare.py
-chicago.csv
-new_york_city.csv
-washington.csv
+raw data to analyse:
+1. chicago.csv
+2. new_york_city.csv
+3. washington.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
