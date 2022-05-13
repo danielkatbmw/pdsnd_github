@@ -59,7 +59,6 @@ def get_filters():
     return city, month, day
 
 
-
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -83,7 +82,6 @@ def load_data(city, month, day):
     df['day_of_week'] = df['Start Time'].dt.dayofweek # Monday = 0 / Sunday = 6
     df['start_hour'] = df['Start Time'].dt.hour
 
-
     # filter by month if applicable
     if month != 'all':
         df = df[df['month'] == month]
@@ -93,7 +91,6 @@ def load_data(city, month, day):
         # filter by day of week to create the new dataframe
         df = df[df['day_of_week'] == day]
     return df
-
 
 
 def time_stats(df):
@@ -124,7 +121,6 @@ def time_stats(df):
         xm = 'pm'
     print('\nThe most common start hour is at {} {}.\n'.format(popular_hour, xm))
 
-
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -142,12 +138,10 @@ def station_stats(df):
     popular_end_station = df['End Station'].mode()[0]
     print('The most common start station is {}...\n ...and most people finish their rental at {}.\n'.format(popular_start_station, popular_end_station))
 
-
     # display most frequent combination of start station and end station trip
     df['Start End'] = df['Start Station'] + " to " + df['End Station']
     popular_trip = df['Start End'].mode()[0]
     print('The most frequently used trip is from {}.'.format(popular_trip))
-
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
