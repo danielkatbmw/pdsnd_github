@@ -1,3 +1,6 @@
+# project by Daniel Krieg
+# project submission to Udacity in April 2022 - reviewed positively.
+
 import time
 from datetime import timedelta
 import pandas as pd
