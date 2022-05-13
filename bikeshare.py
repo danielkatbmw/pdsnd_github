@@ -241,12 +241,16 @@ def main():
         # calling one function after another
         time_stats(df)
         input("Press Enter to continue...")
+        
+        user_stats(df)
+        input("Press Enter to continue...")        
+        
         station_stats(df)
         input("Press Enter to continue...")
+       
         trip_duration_stats(df)
         input("Press Enter to continue...")
-        user_stats(df)
-        input("Press Enter to continue...")
+        
         show_raw_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
