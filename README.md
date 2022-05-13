@@ -10,16 +10,16 @@ Bikeshare Analysis
 Analysis of bikesharing data for three U.S. cities in the year of 2017.
 
 ### Files used
-bikeshare.py
-raw data to analyse:
+bikeshare.py  
+raw data to analyse:  
 1. chicago.csv
 2. new_york_city.csv
 3. washington.csv
 
-###Github
+### Github
 [link to the Github remote repo](https://github.com/danielkatbmw/pdsnd_github "Github remote repo for pdsnd project")
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.  
 2022-05-13: no credits used so far.
 
